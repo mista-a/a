@@ -3,7 +3,7 @@
 import Button from '@/Components/Button/Button'
 import SizeChooser from '@/Components/SizeChooser/SizeChooser'
 import { ProductType } from '@/types/product'
-import getAverageImageColor from '@/utils/getAverageImageColor/getAverageImageColor'
+// import getAverageImageColor from '@/utils/getAverageImageColor/getAverageImageColor'
 
 //fix нормальный тип для next страницы
 const ProductPage: React.FC = () => {
@@ -22,13 +22,13 @@ const ProductPage: React.FC = () => {
     ],
   }
 
-  async function getImageColor() {
-    const color = await getAverageImageColor(
-      'https://ru.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-skate-sneaker--BSUPN1DN17_PM2_Front%20view.png?wid=1920&hei=990'
-    )
-    console.log(color)
-  }
-  getImageColor()
+  // async function getImageColor() {
+  //   const color = await getAverageImageColor(
+  //     'https://ru.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-skate-sneaker--BSUPN1DN17_PM2_Front%20view.png?wid=1920&hei=990'
+  //   )
+  //   console.log(color)
+  // }
+  // getImageColor()
 
   return (
     <div className=''>
