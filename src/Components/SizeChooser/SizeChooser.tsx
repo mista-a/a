@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { ProductType } from '@/types/product'
 import Button from '@/Components/Button/Button'
 
-interface SizeChooserProps extends ProductType {}
+type SizeChooserProps = {} & ProductType
 
 const SizeChooser: React.FC<SizeChooserProps> = ({ name, sizes }) => {
   const [activeSize, setActiveSize] = useState<number | null>()
